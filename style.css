@@ -1,6 +1,4 @@
-body{
-    background: linear-gradient(180deg, #d3ecfd, #021b53);
-}
+
 .pos{
     margin-right: 35px;
 
@@ -34,4 +32,62 @@ h1 { color: #ffffff;
     0 18px 23px rgba(0,0,0,0.1);
 
 
+}
+
+.add_palitra {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    top: 87%;
+    z-index: 99999;
+}
+
+.hover-image-3 * {
+    box-sizing: border-box;
+}
+.hover-image-3 {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+.hover-image-3 a span {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 10px;
+    z-index: 2 ;
+    background: url("icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hover-image-3 .hover-image-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #e6e8ff;
+    right: -25px;
+    bottom: -35px;
+    width: 160px;
+    height: 160px;
+    transform: scale(0);
+    transition: all 0.3s linear;
+}
+.hover-image-3 a:hover .hover-image-circle {
+    transform: scale(1);
+    animation: ripple 0.3s linear;
+}
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
