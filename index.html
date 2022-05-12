@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <title>MyCity</title>
+
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("A#trigger").toggle(function() {
+                    // Отображаем скрытый блок
+                    $("DIV#box").fadeIn(); // fadeIn - плавное появление
+                    return false; // не производить переход по ссылке
+                },
+                function() {
+                    // Скрываем блок
+                    $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение
+                    return false; // не производить переход по ссылке
+                }); // end of toggle()
+        }); // end of ready()
+    </script>
+
 </head>
 
 <body>
-
-
-
-
-
 
 <!-- навигация -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light boxShadow">
@@ -30,7 +43,7 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Личный кабинет</a>
+                    <a class="nav-link" href="profile.html">Личный кабинет</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,8 +57,8 @@
 
             </ul>
             <form class="d-flex pos">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit" style="border-color:#5490bc; color:#5490bc ">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="butt btn btn-primary" type="submit" style=" color: white; background:#021b53; border:none;">Найти</button>
             </form>
 
             <!-- авторизация -->
@@ -121,7 +134,7 @@
     </div>
 
             <!-- Регистрация -->
-            <button type="button " style="background:#021b53; border: none" class="btn btn-primary pos1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button " style="background:#b24f4f; border: none" class="btn btn-primary pos1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Регистрация
             </button>
 
@@ -130,7 +143,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">Регистрация</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -175,7 +188,7 @@
                 </div>
             </div>
             <!-- Регистрация -->
-</nav>
+ </nav>
 <!--Конец навигации-->
 
 
@@ -193,7 +206,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Подписка на новости</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
@@ -218,7 +231,8 @@
 
     <div class="">
 
-        <h2 class="navbar-brand text-center color " style="color: #021b53; font-size: 42px; ">Найденные животные</h2>
+
+    <h2 class="navbar-brand text-center color " style="color: #021b53; font-size: 42px; ">Найденные животные</h2>
     <div id="carouselExampleIndicators" class="carousel slide m-auto p-2" style="width: 50%" data-bs-ride="carousel" style="min-height: 400px;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -232,8 +246,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Найдена мышь</h5>
                         <p class="card-text">Мышь серая, была утеряна в центральном районе</p>
-                        <a href="#" style="background:#4d91c0; border: none" class="btn btn-primary">Откликнуться</a>
-                        <a href="cart.html" style="background:#021b53; border: none" class="btn btn-primary">Все найденные животные</a>
+                        <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+
                     </div>
                 </div>
             </div>
@@ -243,9 +257,13 @@
                         <div class="card-body">
                             <h5 class="card-title">Найдена собака</h5>
                             <p class="card-text">Собака рыжая, была утеряна в красногвардейчком райне районе</p>
-                            <a href="#" style="background:#4d91c0; border: none" class="btn btn-primary">Откликнуться</a>
-                            <a href="cart.html" style="background:#021b53; border: none" class="btn btn-primary">Все найденные животные</a>
+                            <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+
+
+
+
                         </div>
+
                 </div>
             </div>
 
@@ -255,8 +273,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Найдена горила</h5>
                         <p class="card-text">Горилла, была утеряна в красногвардейcком районе</p>
-                        <a href="#" style="background:#4d91c0; border: none" class="btn btn-primary">Откликнуться</a>
-                        <a href="cart.html" style="background: #021b53; border: none" class="btn btn-primary">Все найденные животные</a>
+                        <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+
                     </div>
 
                 </div>
@@ -272,13 +290,86 @@
             <span class="visually-hidden">Следующий</span>
         </button>
     </div>
+
     </div>
+
+    <a id='trigger' style="background: #b24f4f; border: none; height: 70px ;width: 100%;margin-top: 10px; padding-top: 10px" class="btn btn-primary"><p style="font-size: 26px;">Все найденные животные</p></a>
+    <div id='box' style='display: none;padding:10px;background-color:#f1f1f1;'>
+
+        <div class="d-flex justify-content-center flex-wrap flex-row">
+            <div class="d-flex justify-content-center m-3 p-3" style="min-width: 300px; width: 45%;">
+
+
+                <div class="card" style="width: 70rem;">
+                    <img src="image/pets/кошка.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Кошка</h5>
+                        <div class="card-text">
+
+                            <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+                            <p class="w-50" style="min-width: 250px;"> Кошка</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+                            <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая. Любит играть, ласковая.</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+                            <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+                            <p class="w-50" style="min-width: 300px;">Василиостровский</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+                            <p class="w-50" style="min-width: 300px;">24-03-2020</p>
+
+
+                        </div>
+                        <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex justify-content-center m-3 p-3" style="min-width: 300px; width: 45%;">
+
+                <div class="card" style="width: 70rem;">
+                    <img src="image/pets/коза.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Коза</h5>
+                        <div class="card-text">
+
+                            <p class="w-50 text-primary " style="min-width: 250px;">Вид животного:</p>
+                            <p class="w-50" style="min-width: 250px;"> Коза</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+                            <p class="w-50" style="min-width: 300px;">Потерялась коза, последний раз видели в здании Московского вокзала
+                                г. Санкт-Петербург. Коза белая, пуховая.</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+                            <p class="w-50" style="min-width: 300px;">go-011-spb</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+                            <p class="w-50" style="min-width: 300px;">Центральный</p>
+
+                            <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+                            <p class="w-50" style="min-width: 300px;">14-03-2022</p>
+
+
+                        </div>
+                        <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> </div>
+
 
 
 
 </main>
 
-<footer class="border-bottom" style="margin-top: 30px;  background: #021b53">
+<footer class="border-bottom" style="margin-top:10px;  background: #021b53">
     <p class="text-white p-5" style="text-align: center;">GET PET BACK © Copyright, 2022<br><br>Все права защищены</p>
 </footer>
 
