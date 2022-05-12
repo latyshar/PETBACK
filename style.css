@@ -21,18 +21,7 @@
     background: #e2e2e2;
 }
 
-h1 { color: #ffffff;
-    font-family: 'Arial Black', Gadget, sans-serif;
-    font-size: 52px;
-    font-weight: 200;
 
-    line-height: 1; text-align: center;
-    text-shadow: 0 4px 3px rgba(0,0,0,0.4),
-    0 8px 13px rgba(0,0,0,0.1),
-    0 18px 23px rgba(0,0,0,0.1);
-
-
-}
 
 .add_palitra {
     display: block;
@@ -43,6 +32,13 @@ h1 { color: #ffffff;
     top: 87%;
     z-index: 99999;
 }
+
+.boxShadow {
+
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+/*анимация*/
 
 .hover-image-3 * {
     box-sizing: border-box;

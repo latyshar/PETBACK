@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>MyCity</title>
+</head>
+
+<body>
+
+
+<!-- навигация -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light boxShadow">
+    <div class="container-fluid">
+        <img class="img" src="logo.png"/>
+        <a class="navbar-brand" href="#">GET PET BACK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Личный кабинет</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Объявление
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Добавить объявление</a></li>
+                        <li><a class="dropdown-item" href="#">Поиск по объявлениям</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex pos">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="border-color:#5490bc; color:#5490bc ">Search</button>
+            </form>
+
+            <!-- авторизация -->
+
+            <!-- Button trigger modal -->
+            <button type="button" style="background:#021b53; border: none" class="butt btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Вход
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"/>Запомнить меня</label>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" style="border: none" class="btn btn-secondary" data-bs-dismiss="modal">Назад</button>
+                            <button type="submit" style="background:#021b53; border: none" class="btn btn-primary">Войти</button>
+                        </div>
+
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text"></div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1"/>Запомнить меня</label>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Регистрация -->
+            <button type="button " style="background:#021b53; border: none" class="btn btn-primary pos1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Регистрация
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Имя</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Фамилия</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Пароль</label>
+                                    <input type="text" class="form-control" id="inputAddress2">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Страна</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="Россия">
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Проверить меня
+                                    </label>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" style="border: none" class="btn btn-secondary" data-bs-dismiss="modal">Назад</button>
+                            <button type="button" style="background:#021b53; border: none" class="btn btn-primary">Зарегестрироваться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Регистрация -->
+</nav>
+<!--Конец навигации-->
+
+<div class="hover-image-3">
+    <a data-bs-toggle="modal" data-bs-target="#Modal" class="add_palitra" >
+        <span></span>
+        <div class="hover-image-circle"></div>
+    </a>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="text-center color m-2">Подписка на новости</h2>
+                <form class="w-50 m-auto p-3" style="min-width: 300px;">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Введите адрес электронной почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <h2 class="navbar-brand text-center color m-2" style="color: #021b53; font-size: 42px">Карточки найденных животных</h2>
+    <div class="d-flex justify-content-center flex-wrap flex-row">
+        <div class="d-flex justify-content-center m-3 p-3" style="min-width: 300px; width: 45%;">
+
+
+            <div class="card" style="width: 70rem;">
+                <img src="image/pets/кошка.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Кошка</h5>
+                    <div class="card-text">
+
+                        <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+                        <p class="w-50" style="min-width: 250px;"> Кошка</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+                        <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая. Любит играть, ласковая.</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+                        <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+                        <p class="w-50" style="min-width: 300px;">Василиостровский</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+                        <p class="w-50" style="min-width: 300px;">24-03-2020</p>
+
+
+                    </div>
+                    <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="d-flex justify-content-center m-3 p-3" style="min-width: 300px; width: 45%;">
+
+            <div class="card" style="width: 70rem;">
+                <img src="image/pets/коза.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Коза</h5>
+                    <div class="card-text">
+
+                        <p class="w-50 text-primary " style="min-width: 250px;">Вид животного:</p>
+                        <p class="w-50" style="min-width: 250px;"> Коза</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+                        <p class="w-50" style="min-width: 300px;">Потерялась коза, последний раз видели в здании Московского вокзала
+                            г. Санкт-Петербург. Коза белая, пуховая.</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+                        <p class="w-50" style="min-width: 300px;">go-011-spb</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+                        <p class="w-50" style="min-width: 300px;">Центральный</p>
+
+                        <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+                        <p class="w-50" style="min-width: 300px;">14-03-2022</p>
+
+
+                    </div>
+                    <a href="#" style="background:#021b53; border: none" class="btn btn-primary">Откликнуться</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="border-bottom" style="margin-top: 30px;  background: #021b53">
+    <p class="text-white p-5" style="text-align: center;">GET PET BACK © Copyright, 2022<br><br>Все права защищены</p>
+</footer>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
