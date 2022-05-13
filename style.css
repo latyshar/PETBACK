@@ -25,12 +25,23 @@
 
 .add_palitra {
     display: block;
-    width: 50px;
-    height: 50px;
     position: fixed;
-    right: 10px;
-    top: 87%;
+    left: 0px;
+    bottom: 20%;
     z-index: 99999;
+}
+.podpiska{
+    height: 200px;
+    width: 60px;
+    background: #b24f4f;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+    0 2px 2px rgba(0,0,0,0.15),
+    0 4px 4px rgba(0,0,0,0.15),
+    0 8px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0px 10px 10px 0px;
+
 }
 
 .boxShadow {
@@ -38,59 +49,25 @@
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 }
 
+.text{
+    font-family: 'Arial Black', sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    letter-spacing: -2px;
+    font-size:16px;
+
+}
 /*анимация*/
-
-.hover-image-3 * {
-    box-sizing: border-box;
+.podpiska:hover {
+    background: #021b53;
 }
-.hover-image-3 {
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    line-height: 0;
-}
-.hover-image-3 a span {
-    display: block;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    right: 20px;
-    bottom: 10px;
-    z-index: 2 ;
-    background: url("icon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hover-image-3 .hover-image-circle {
-    position: absolute;
-    border-radius: 50%;
-    background: #e6e8ff;
-    right: -25px;
-    bottom: -35px;
-    width: 160px;
-    height: 160px;
-    transform: scale(0);
-    transition: all 0.3s linear;
-}
-.hover-image-3 a:hover .hover-image-circle {
-    transform: scale(1);
-    animation: ripple 0.3s linear;
-}
-@keyframes ripple {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 
 
 main{
     height: auto;
+
 }
 
